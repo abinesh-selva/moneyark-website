@@ -25,13 +25,13 @@ const Privacy = () => {
     return (
         <>
         <Helmet>
-            <title>Privacy Policy — Zentally</title>
-            <meta name="description" content="Zentally's commitment to your financial privacy. We categorize data collection, specify retention periods, and ensure your data stays on your device." />
+            <title>Privacy Policy — MoneyArk</title>
+            <meta name="description" content="MoneyArk's commitment to your financial privacy. We categorize data collection, specify retention periods, and ensure your data stays on your device." />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://zentally.app/privacy" />
+            <link rel="canonical" href="https://moneyark.app/privacy" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://zentally.app/privacy" />
-            <meta property="og:title" content="Privacy Policy — Zentally" />
+            <meta property="og:url" content="https://moneyark.app/privacy" />
+            <meta property="og:title" content="Privacy Policy — MoneyArk" />
             <meta property="og:description" content="We don't sell your data. Your finances stay on your device." />
         </Helmet>
         <motion.section 
@@ -67,7 +67,7 @@ const Privacy = () => {
                             <h2 className="font-headline text-3xl font-bold text-white tracking-tight">Information Collection</h2>
                         </div>
                         <div className="space-y-6 text-on-surface-variant leading-relaxed">
-                            <p>To provide Zentally's high-fidelity financial features, we categorize collected data as follows:</p>
+                            <p>To provide MoneyArk's high-fidelity financial features, we categorize collected data as follows:</p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div className="p-6 bg-surface-container-low rounded-xl border border-white/5">
                                     <h3 className="font-headline font-bold text-white mb-2">User-Provided</h3>
@@ -113,7 +113,7 @@ const Privacy = () => {
                             <h2 className="font-headline text-3xl font-bold text-white tracking-tight">Third-Party Disclosure</h2>
                         </div>
                         <div className="space-y-6 text-on-surface-variant leading-relaxed">
-                            <p>Your sensitive financial data (like bank credentials for sync) is never stored on Zentally's servers. We use premium, industry-standard third-party processors that handle the secure handshake with your financial institutions. Payment for the "Universal Tier" is managed exclusively by the Apple App Store and Google Play Store.</p>
+                            <p>Your sensitive financial data (like bank credentials for sync) is never stored on MoneyArk's servers. We use premium, industry-standard third-party processors that handle the secure handshake with your financial institutions. Payment for the "Universal Tier" is managed exclusively by the Apple App Store and Google Play Store.</p>
                         </div>
                     </div>
                 </motion.article>

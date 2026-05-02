@@ -29,8 +29,8 @@ const BottomNav = ({ scrolled }) => {
       </Link>
       <a 
         className="flex items-center gap-2 rounded-full px-5 py-2 transition-all duration-300 text-primary-container bg-primary-container/10 border border-primary-container/20 hover:bg-primary-container hover:text-zinc-950" 
-        href="/zentally.apk"
-        download="Zentally.apk"
+        href="/moneyark.apk"
+        download="MoneyArk.apk"
       >
         <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>download</span>
         <span className="font-headline text-[10px] font-bold tracking-widest uppercase">Download</span>

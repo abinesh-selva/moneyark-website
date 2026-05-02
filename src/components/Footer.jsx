@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="flex flex-col gap-2">
                         <p className="font-mono-premium text-[11px] text-[#FBFFFA]/40 uppercase tracking-[0.2em]">
-                            Copyright © {new Date().getFullYear()} ZENTALLY. All rights reserved
+                            Copyright © {new Date().getFullYear()} MONEYARK. All rights reserved
                         </p>
                         <div className="flex gap-2">
                             <span className="w-1 h-1 rounded-full bg-[#00FFC2]/20"></span>
@@ -20,14 +20,14 @@ const Footer = () => {
                     <div className="flex items-center gap-12">
                         <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-[#FBFFFA]/30 hover:text-[#00FFC2] transition-colors" to="/privacy">Privacy</Link>
                         <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-[#FBFFFA]/30 hover:text-[#00FFC2] transition-colors" to="/terms">Terms</Link>
-                        <a className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-[#FBFFFA]/30 hover:text-[#00FFC2] transition-colors" href="https://twitter.com/zentally">Twitter</a>
+                        <a className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-[#FBFFFA]/30 hover:text-[#00FFC2] transition-colors" href="https://twitter.com/moneyark">Twitter</a>
                     </div>
                 </div>
             </div>
             {/* Giant Brand Wordmark */}
             <div className="relative w-full overflow-hidden mt-12 select-none pointer-events-none">
                 <p className="text-[21vw] font-headline font-black leading-none tracking-tighter text-center whitespace-nowrap bg-gradient-to-b from-[#FBFFFA]/10 to-transparent bg-clip-text text-transparent">
-                    ZENTALLY
+                    MONEYARK
                 </p>
             </div>
         </footer>

@@ -2,37 +2,103 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zentally | Track Your Money, Simply</title>
-    <meta name="description" content="Track income, expenses, and budgets in one place. Zentally is a free Android app with biometric lock, offline storage, and smart analytics." />
+    <title>MoneyArk — Money Manager & Personal Finance Tracker</title>
+    <meta name="description" content="Master the flow of your assets with MoneyArk, the #1 free personal finance manager and budget tracker. Secure expense tracking, asset management, and smart analytics for Android." />
+    <meta name="keywords" content="money manager, personal finance tracker, expense tracker, asset management, budget app, free finance manager, android budgeting, moneyark app" />
     <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zentally — Free Personal Finance Tracker for Android" />
-    <meta property="og:description" content="Track income, expenses, and budgets in one place. Free for Android." />
-    <meta property="og:image" content="https://zentally.app/og-image.png" />
+    <meta property="og:url" content="https://moneyark.app/" />
+    <meta property="og:title" content="MoneyArk — Money Manager & Personal Finance Tracker" />
+    <meta property="og:description" content="Track income, expenses, and manage assets in one place. Secure, free, and private finance tracking for Android." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MoneyArk — Personal Finance Manager" />
+    <meta name="twitter:description" content="The easiest way to master your assets. Track expenses and manage budgets on Android." />
+    <meta name="twitter:image" content="/og-image.png" />
 
     <!-- Preconnect for Material Symbols icon font only -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+
+    <style>
+      /* Critical styles for the initial loader */
+      body { margin: 0; background: #09090B; }
+      .initial-loader {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #09090B;
+        z-index: 9999;
+        font-family: sans-serif;
+      }
+      .loader-logo {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 24px;
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      .loader-bar {
+        width: 120px;
+        height: 2px;
+        background: rgba(0, 255, 194, 0.1);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .loader-progress {
+        width: 40%;
+        height: 100%;
+        background: #00FFC2;
+        border-radius: 4px;
+        animation: slide 1.5s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(0.95); }
+      }
+      @keyframes slide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(250%); }
+      }
+    </style>
   </head>
   <body class="bg-[#09090B] selection:bg-[#00FFC2]/30 selection:text-[#00FFC2]">
     <div id="root">
-      <div style="padding: 20px; font-family: sans-serif; color: #fff; background: #09090b; min-height: 100vh;">
-        <h1>Zentally – Smart Personal Finance Manager</h1>
-        <p>Master the flow of your assets. Track income, expenses, and budgets all in one place. Zentally keeps your finances clear, private, and always up to date.</p>
-        <ul>
-          <li>Cloud Synchronization via Supabase</li>
-          <li>Offline First with SQLite</li>
-          <li>Interactive Dashboard & Analytics</li>
-          <li>Biometric App Lock</li>
-          <li>Multi-Currency Support</li>
-        </ul>
-        <p>Download Zentally for Android now.</p>
+      <!-- Initial Loading State -->
+      <div class="initial-loader">
+        <img src="/logo.png" alt="MoneyArk" class="loader-logo">
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
+        </div>
       </div>
     </div>
+
+    <!-- Static Fallback for SEO Crawlers (Hidden from users with JS) -->
+    <noscript>
+      <div style="padding: 40px; font-family: sans-serif; color: #fff; background: #09090b; min-height: 100vh;">
+        <h1>MoneyArk – Professional Money Manager & Asset Tracker</h1>
+        <p>Master the flow of your assets. Track income, expenses, and monthly budgets all in one place. MoneyArk keeps your finances clear, private, and always up to date with professional-grade asset management features.</p>
+        <h2>Key Features:</h2>
+        <ul>
+          <li><strong>Asset Management:</strong> Track savings, investments, and expenses in one dashboard.</li>
+          <li><strong>Cloud Synchronization:</strong> Secure real-time sync via Supabase.</li>
+          <li><strong>Privacy First:</strong> Offline-first storage with SQLite and biometric app lock.</li>
+          <li><strong>Smart Analytics:</strong> Interactive financial charts and category-based reports.</li>
+          <li><strong>Multi-Currency Support:</strong> Support for over 15 major currencies.</li>
+        </ul>
+        <p>Download MoneyArk for Android now – The simplest way to manage your personal finances.</p>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

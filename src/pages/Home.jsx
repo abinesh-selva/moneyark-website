@@ -23,7 +23,7 @@ const staggerContainer = {
 const APP_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
-  "name": "Zentally",
+  "name": "MoneyArk",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Android",
   "offers": {
@@ -31,7 +31,7 @@ const APP_SCHEMA = {
     "price": "0",
     "priceCurrency": "USD"
   },
-  "description": "Track income, expenses, and budgets all in one place. Zentally keeps your finances clear, private, and always up to date.",
+  "description": "Track income, expenses, and budgets all in one place. MoneyArk keeps your finances clear, private, and always up to date.",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.0",
@@ -55,24 +55,24 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Zentally — Free Personal Finance Tracker for Android</title>
-                <meta name="description" content="Track income, expenses, and budgets in one place. Zentally is a free Android app with biometric lock, offline storage, calendar view, and 15 currency support." />
-                <meta name="keywords" content="personal finance app, expense tracker, budget tracker, free finance app, android money manager, income expense tracker, zentally" />
+                <title>MoneyArk — Money Manager & Personal Finance Tracker</title>
+                <meta name="description" content={`The easiest way to master your assets. MoneyArk is a free Android money manager with ${downloads || "growing"} downloads. Track expenses, manage budgets, and analyze your finances with asset management features.`} />
+                <meta name="keywords" content="money manager, expense tracker, personal finance app, asset management, budget tracker, free finance manager, moneyark android, monthly budget" />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://zentally.app/" />
+                <link rel="canonical" href="https://moneyark.app/" />
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://zentally.app/" />
-                <meta property="og:title" content="Zentally — Free Personal Finance Tracker for Android" />
-                <meta property="og:description" content="Track income, expenses, and budgets in one place. Free Android app with biometric lock, offline storage, and smart analytics." />
-                <meta property="og:image" content="https://zentally.app/og-image.png" />
+                <meta property="og:url" content="https://moneyark.app/" />
+                <meta property="og:title" content="MoneyArk — Money Manager & Expense Tracker" />
+                <meta property="og:description" content="Master the flow of your assets. Track income, expenses, and manage budgets in one secure, private app for Android." />
+                <meta property="og:image" content="/og-image.png" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Zentally — Free Personal Finance Tracker" />
-                <meta name="twitter:description" content="Track income, expenses, and budgets in one place. Free for Android." />
-                <meta name="twitter:image" content="https://zentally.app/og-image.png" />
+                <meta name="twitter:title" content="MoneyArk — Personal Finance Manager" />
+                <meta name="twitter:description" content="Track expenses and manage budgets on the go. master the flow of your assets." />
+                <meta name="twitter:image" content="/og-image.png" />
 
                 {/* JSON-LD */}
                 <script type="application/ld+json">{JSON.stringify(APP_SCHEMA)}</script>
@@ -99,7 +99,7 @@ const Home = () => {
                       variants={fadeIn}
                       className="text-on-surface-variant max-w-md text-lg leading-relaxed"
                     >
-                        Track income, expenses, and budgets all in one place. Zentally keeps your finances clear, private, and always up to date.
+                        Track income, expenses, and budgets all in one place. MoneyArk keeps your finances clear, private, and always up to date.
                     </motion.p>
                     <motion.div variants={fadeIn} className="pt-4 flex flex-col sm:flex-row gap-4">
                         <DownloadButton className="group flex items-center gap-3 bg-surface-container-high border border-white/10 hover:border-primary-container/50 px-5 py-3 rounded-xl transition-all">

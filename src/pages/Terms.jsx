@@ -25,10 +25,10 @@ const Terms = () => {
     return (
         <>
         <Helmet>
-            <title>Terms & Conditions — Zentally</title>
-            <meta name="description" content="Read Zentally's Terms and Conditions of Use. Understand your rights and responsibilities when using our personal finance management software." />
+            <title>Terms & Conditions — MoneyArk</title>
+            <meta name="description" content="Read MoneyArk's Terms and Conditions of Use. Understand your rights and responsibilities when using our personal finance management software." />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://zentally.app/terms" />
+            <link rel="canonical" href="https://moneyark.app/terms" />
         </Helmet>
         <motion.section 
           initial="hidden"
@@ -53,7 +53,7 @@ const Terms = () => {
                 <motion.section variants={fadeIn} className="space-y-6">
                     <h2 className="text-2xl font-headline font-bold text-white">1. Acceptance of Terms</h2>
                     <p className="text-on-surface-variant leading-relaxed">
-                        By accessing or using Zentally ("the Service"), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access the Service. Zentally is a personal finance management tool developed to provide architectural clarity to your finances.
+                        By accessing or using MoneyArk ("the Service"), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access the Service. MoneyArk is a personal finance management tool developed to provide architectural clarity to your finances.
                     </p>
                 </motion.section>
 
@@ -67,34 +67,34 @@ const Terms = () => {
                 <motion.section variants={fadeIn} className="space-y-6">
                     <h2 className="text-2xl font-headline font-bold text-white">3. Service Provision & Modifications</h2>
                     <p className="text-on-surface-variant leading-relaxed">
-                        Zentally provides finance tracking software. We reserve the right to modify, suspend, or discontinue the Service (or any part thereof) at any time with or without notice. For significant changes, we will attempt to provide a notice period of at least 7 days through app-banner or email.
+                        MoneyArk provides finance tracking software. We reserve the right to modify, suspend, or discontinue the Service (or any part thereof) at any time with or without notice. For significant changes, we will attempt to provide a notice period of at least 7 days through app-banner or email.
                     </p>
                 </motion.section>
 
                 <motion.section variants={fadeIn} className="space-y-6">
                     <h2 className="text-2xl font-headline font-bold text-white">4. Intellectual Property</h2>
                     <p className="text-on-surface-variant leading-relaxed">
-                        The Service and its original content, features, and functionality (including but not limited to all software, UI design, code, and branding) are and will remain the exclusive property of Zentally and its licensors. Our design system and "Digital Architect" aesthetic are protected by copyright and intellectual property laws.
+                        The Service and its original content, features, and functionality (including but not limited to all software, UI design, code, and branding) are and will remain the exclusive property of MoneyArk and its licensors. Our design system and "Digital Architect" aesthetic are protected by copyright and intellectual property laws.
                     </p>
                 </motion.section>
 
                 <motion.section variants={fadeIn} className="space-y-6">
                     <h2 className="text-2xl font-headline font-bold text-white">5. Limitation of Liability</h2>
                     <p className="text-on-surface-variant leading-relaxed">
-                        In no event shall Zentally, nor its directors or employees, be liable for any indirect, incidental, special, or consequential damages resulting from your use of the Service. This includes data loss, financial errors, or service interruptions. The Service is provided on an "AS IS" and "AS AVAILABLE" basis.
+                        In no event shall MoneyArk, nor its directors or employees, be liable for any indirect, incidental, special, or consequential damages resulting from your use of the Service. This includes data loss, financial errors, or service interruptions. The Service is provided on an "AS IS" and "AS AVAILABLE" basis.
                     </p>
                 </motion.section>
 
                 <motion.section variants={fadeIn} className="space-y-6">
                     <h2 className="text-2xl font-headline font-bold text-white">6. Governing Law</h2>
                     <p className="text-on-surface-variant leading-relaxed">
-                        These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which Zentally operates, without regard to its conflict of law provisions. Any legal disputes shall be handled within local courts designated by Zentally.
+                        These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which MoneyArk operates, without regard to its conflict of law provisions. Any legal disputes shall be handled within local courts designated by MoneyArk.
                     </p>
                 </motion.section>
             </motion.div>
 
             <motion.div variants={fadeIn} className="mt-24 pt-12 border-t border-white/5 text-center">
-                <p className="text-zinc-500 text-sm">Have questions about our terms? Contact us at legal@zentally.app</p>
+                <p className="text-zinc-500 text-sm">Have questions about our terms? Contact us at legal@moneyark.app</p>
             </motion.div>
         </motion.section>
         </>

@@ -1,8 +1,8 @@
 {
-  "name": "zentally-website",
+  "name": "moneyark-website",
   "version": "1.0.0",
   "type": "module",
-  "description": "Zentally - The Digital Architect of Finance Marketing Website",
+  "description": "MoneyArk - The Digital Architect of Finance Marketing Website",
   "main": "index.js",
   "scripts": {
     "dev": "vite",

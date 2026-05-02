@@ -1,6 +1,6 @@
-# Zentally Dynamic Website (React)
+# MoneyArk Dynamic Website (React)
 
-A high-fidelity, neo-minimalist marketing website for Zentally, reimagined as a **Single Page Application (SPA)** using React and Vite.
+A high-fidelity, neo-minimalist marketing website for MoneyArk, reimagined as a **Single Page Application (SPA)** using React and Vite.
 
 ## 🚀 Features
 - **Dynamic Routing**: Instant page transitions via `react-router-dom`.

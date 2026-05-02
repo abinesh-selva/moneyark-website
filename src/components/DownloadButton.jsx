@@ -7,8 +7,8 @@ const DownloadButton = ({ className, children }) => {
 
   return (
     <a
-      href="/zentally.apk"
-      download="Zentally.apk"
+      href="/moneyark.apk"
+      download="MoneyArk.apk"
       className={className}
       onClick={handleDownload}
     >

@@ -11,11 +11,17 @@ const Home = lazy(() => import('./pages/Home'));
 const Pricing = lazy(() => import('./pages/Pricing'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
-// Loading fallback component
+// Loading fallback component that matches the brand identity
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center">
-    <div className="w-12 h-12 rounded-full border-t-2 border-primary-container animate-spin"></div>
+  <div className="fixed inset-0 flex flex-col items-center justify-center bg-background z-[9999]">
+    <div className="relative">
+      <img src="/logo.png" alt="MoneyArk" className="w-16 h-16 animate-pulse" />
+      <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-24 h-1 bg-primary-container/10 rounded-full overflow-hidden">
+        <div className="w-full h-full bg-primary-container animate-loading-bar"></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -45,6 +51,8 @@ function App() {
               <Route path="/pricing" element={<RouteWrappers.ScrollToTop><Pricing /></RouteWrappers.ScrollToTop>} />
               <Route path="/privacy" element={<RouteWrappers.ScrollToTop><Privacy /></RouteWrappers.ScrollToTop>} />
               <Route path="/terms" element={<RouteWrappers.ScrollToTop><Terms /></RouteWrappers.ScrollToTop>} />
+              {/* Catch-all route for 404 */}
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </main>

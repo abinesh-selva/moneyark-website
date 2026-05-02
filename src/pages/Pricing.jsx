@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const PRICING_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Zentally",
+  "name": "MoneyArk",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Android",
   "offers": {
@@ -40,18 +40,18 @@ const Pricing = () => {
     return (
         <>
         <Helmet>
-            <title>Zentally Is Free — No Cost, No Catch</title>
-            <meta name="description" content="Zentally is completely free to download. No subscriptions, no premium tiers, no hidden fees. Get full access to every feature on Android at zero cost." />
-            <meta name="keywords" content="free finance app, free budget tracker, no subscription expense tracker, zentally free, android finance app free" />
+            <title>MoneyArk Is Free — No Cost, No Catch</title>
+            <meta name="description" content="MoneyArk is completely free to download. No subscriptions, no premium tiers, no hidden fees. Get full access to every feature on Android at zero cost." />
+            <meta name="keywords" content="free finance app, free budget tracker, no subscription expense tracker, moneyark free, android finance app free" />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://zentally.app/pricing" />
+            <link rel="canonical" href="https://moneyark.app/pricing" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://zentally.app/pricing" />
-            <meta property="og:title" content="Zentally Is Free — No Cost, No Catch" />
+            <meta property="og:url" content="https://moneyark.app/pricing" />
+            <meta property="og:title" content="MoneyArk Is Free — No Cost, No Catch" />
             <meta property="og:description" content="No subscriptions, no premium tiers. Every feature, free forever." />
-            <meta property="og:image" content="https://zentally.app/og-image.png" />
+            <meta property="og:image" content="https://moneyark.app/og-image.png" />
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content="Zentally Is Free — No Cost, No Catch" />
+            <meta name="twitter:title" content="MoneyArk Is Free — No Cost, No Catch" />
             <meta name="twitter:description" content="No subscriptions, no premium tiers. Every feature, free." />
             <script type="application/ld+json">{JSON.stringify(PRICING_SCHEMA)}</script>
         </Helmet>
@@ -69,7 +69,7 @@ const Pricing = () => {
                     100% <br/> <span className="text-primary-container">Free</span>
                 </motion.h1>
                 <motion.p variants={fadeIn} className="text-on-surface-variant max-w-lg text-lg font-light leading-relaxed pt-8">
-                    Every feature, zero cost. Zentally is completely free to download and use — no hidden fees, no premium tiers, no data selling.
+                    Every feature, zero cost. MoneyArk is completely free to download and use — no hidden fees, no premium tiers, no data selling.
                 </motion.p>
             </motion.header>
 
@@ -129,7 +129,7 @@ const Pricing = () => {
                     <motion.a 
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      href="/zentally.apk" download="Zentally.apk" className="mt-12 w-full py-5 rounded bg-primary-container text-zinc-950 font-label font-bold text-[14px] tracking-[0.3em] uppercase hover:bg-white transition-all shadow-lg flex items-center justify-center gap-3"
+                      href="/moneyark.apk" download="MoneyArk.apk" className="mt-12 w-full py-5 rounded bg-primary-container text-zinc-950 font-label font-bold text-[14px] tracking-[0.3em] uppercase hover:bg-white transition-all shadow-lg flex items-center justify-center gap-3"
                     >
                         <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>android</span>
                         DOWNLOAD FOR FREE

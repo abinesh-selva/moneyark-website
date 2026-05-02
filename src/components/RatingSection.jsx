@@ -86,7 +86,7 @@ const RatingSection = () => {
                 </div>
                 <div>
                   <p className="font-headline font-bold text-xl mb-2">Thanks for rating!</p>
-                  <p className="text-on-surface-variant text-sm">Your feedback helps us improve Zentally.</p>
+                  <p className="text-on-surface-variant text-sm">Your feedback helps us improve MoneyArk.</p>
                 </div>
                 <div className="flex gap-1">
                   {[1,2,3,4,5].map(s => (
@@ -99,7 +99,7 @@ const RatingSection = () => {
             ) : (
               <>
                 <div>
-                  <p className="font-headline font-bold text-xl mb-2">Rate Zentally</p>
+                  <p className="font-headline font-bold text-xl mb-2">Rate MoneyArk</p>
                   <p className="text-on-surface-variant text-sm">Tried the app? Let others know what you think.</p>
                 </div>
                 <div className="flex gap-2">

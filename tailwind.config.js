@@ -77,6 +77,7 @@ export default {
         scan: "scan 3s ease-in-out infinite",
         ticker: "ticker 28s linear infinite",
         "hue-rotate": "hue-rotate 20s linear infinite",
+        "loading-bar": "loading-bar 1.5s ease-in-out infinite",
       },
       keyframes: {
         iridescent: {
@@ -99,6 +100,10 @@ export default {
         "hue-rotate": {
           from: { filter: "hue-rotate(0deg)" },
           to: { filter: "hue-rotate(360deg)" },
+        },
+        "loading-bar": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(250%)" },
         },
       },
     },

@@ -62,7 +62,7 @@ const Pricing = () => {
         >
             <motion.header variants={staggerContainer} className="mb-24 space-y-4">
                 <motion.div variants={fadeIn} className="flex items-center gap-4 text-primary-container font-mono text-xs tracking-widest uppercase mb-4">
-                    <span className="w-12 h-[1px] bg-primary-container"></span>
+                    <span className="w-12 h-px bg-primary-container"></span>
                     <span>No Cost. No Catch.</span>
                 </motion.div>
                 <motion.h1 variants={fadeIn} className="text-7xl md:text-9xl font-headline font-black leading-[0.85] tracking-tighter text-white">
@@ -105,7 +105,7 @@ const Pricing = () => {
                                     'Offline-First Storage',
                                     'Calendar View'
                                 ].map((feature, i) => (
-                                    <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-sm text-[#FBFFFA] font-medium group-hover:text-primary-container transition-colors">
+                                    <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-sm text-on-primary font-medium group-hover:text-primary-container transition-colors">
                                         <span className="material-symbols-outlined text-lg text-primary-container">check_circle</span>
                                         {feature}
                                     </motion.li>
@@ -118,7 +118,7 @@ const Pricing = () => {
                                     '15 Currencies Supported',
                                     'Smart Transaction Filters'
                                 ].map((feature, i) => (
-                                    <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-sm text-[#FBFFFA] font-medium group-hover:text-primary-container transition-colors">
+                                    <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-sm text-on-primary font-medium group-hover:text-primary-container transition-colors">
                                         <span className="material-symbols-outlined text-lg text-primary-container">check_circle</span>
                                         {feature}
                                     </motion.li>
@@ -129,7 +129,7 @@ const Pricing = () => {
                     <motion.a 
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      href="/moneyark.apk" download="MoneyArk.apk" className="mt-12 w-full py-5 rounded bg-primary-container text-zinc-950 font-label font-bold text-[14px] tracking-[0.3em] uppercase hover:bg-white transition-all shadow-lg flex items-center justify-center gap-3"
+                      href="/moneyark.apk" download="MoneyArk.apk" className="mt-12 w-full py-5 rounded bg-primary-container text-zinc-950 font-label font-bold text-sm tracking-[0.3em] uppercase hover:bg-white transition-all shadow-lg flex items-center justify-center gap-3"
                     >
                         <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>android</span>
                         DOWNLOAD FOR FREE

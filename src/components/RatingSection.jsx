@@ -33,7 +33,7 @@ const RatingSection = () => {
           <div className="space-y-10">
             <div>
               <div className="inline-flex items-center gap-4 text-primary-container font-label text-xs tracking-widest uppercase mb-6">
-                <span className="w-12 h-[1px] bg-primary-container"></span>
+                <span className="w-12 h-px bg-primary-container"></span>
                 <span>Live Stats</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-headline font-black mb-3">

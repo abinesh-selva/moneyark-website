@@ -262,7 +262,7 @@ const Home = () => {
                     >
                         <div>
                             <div className="inline-flex items-center gap-4 text-primary-container font-label text-xs tracking-widest uppercase mb-4">
-                                <span className="w-12 h-[1px] bg-primary-container"></span>
+                                <span className="w-12 h-px bg-primary-container"></span>
                                 <span>Inside the App</span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-headline font-black">See it in action</h2>
@@ -360,7 +360,7 @@ const Home = () => {
                         </div>
                         <div className="relative flex justify-center py-8">
                             <span className="material-symbols-outlined text-8xl text-primary-container/20" style={{ fontVariationSettings: "'FILL' 1" }}>fingerprint</span>
-                            <div className="absolute top-1/2 left-0 w-full h-[1px] bg-primary-container/50 shadow-[0_0_15px_rgba(0,255,194,0.8)] animate-scan"></div>
+                            <div className="absolute top-1/2 left-0 w-full h-px bg-primary-container/50 shadow-[0_0_15px_rgba(0,255,194,0.8)] animate-scan"></div>
                         </div>
                     </motion.div>
                     {/* Card 3 (30%) */}
@@ -582,9 +582,9 @@ const Home = () => {
                                 ))}
                             </div>
                             <div className="flex items-center justify-center gap-2 pt-1">
-                                <div className="h-[1px] flex-1 bg-primary-container/15"></div>
+                                <div className="h-px flex-1 bg-primary-container/15"></div>
                                 <span className="text-[9px] font-label font-bold uppercase tracking-[0.2em] text-primary-container/40">+ 9 more</span>
-                                <div className="h-[1px] flex-1 bg-primary-container/15"></div>
+                                <div className="h-px flex-1 bg-primary-container/15"></div>
                             </div>
                         </div>
                         {/* Text */}
@@ -621,9 +621,9 @@ const Home = () => {
                       viewport={{ once: true }}
                       className="inline-flex items-center gap-4 text-primary-container font-label text-xs tracking-widest uppercase mb-6"
                     >
-                        <span className="w-12 h-[1px] bg-primary-container"></span>
+                        <span className="w-12 h-px bg-primary-container"></span>
                         <span>Simple by Design</span>
-                        <span className="w-12 h-[1px] bg-primary-container"></span>
+                        <span className="w-12 h-px bg-primary-container"></span>
                     </motion.div>
                     <motion.h2 variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-4xl md:text-5xl font-headline font-black mb-4">How It Works</motion.h2>
                     <motion.p variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-on-surface-variant font-body max-w-md mx-auto">Get full control of your finances in three steps. No setup headaches.</motion.p>
@@ -636,7 +636,7 @@ const Home = () => {
                   className="grid grid-cols-1 md:grid-cols-3 gap-8 relative"
                 >
                     {/* Connector line (desktop only) */}
-                    <div className="hidden md:block absolute top-10 left-[calc(16.66%+1rem)] right-[calc(16.66%+1rem)] h-[1px] bg-gradient-to-r from-primary-container/10 via-primary-container/50 to-primary-container/10"></div>
+                    <div className="hidden md:block absolute top-10 left-[calc(16.66%+1rem)] right-[calc(16.66%+1rem)] h-px bg-gradient-to-r from-primary-container/10 via-primary-container/50 to-primary-container/10"></div>
                     {/* Step 1 */}
                     <motion.div variants={fadeIn} className="glass-card rounded-xl p-8 flex flex-col items-center text-center gap-6 relative">
                         <div className="w-16 h-16 rounded-full bg-primary-container/10 border border-primary-container/30 flex items-center justify-center relative z-10">

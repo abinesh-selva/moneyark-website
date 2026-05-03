@@ -37,9 +37,9 @@ const Terms = () => {
         >
             <motion.header variants={staggerContainer} className="mb-24 space-y-6 text-center">
                 <motion.div variants={fadeIn} className="inline-flex items-center gap-4 text-primary-container font-mono text-xs tracking-widest uppercase mb-4">
-                    <span className="w-12 h-[1px] bg-primary-container"></span>
+                    <span className="w-12 h-px bg-primary-container"></span>
                     <span>Service Agreement</span>
-                    <span className="w-12 h-[1px] bg-primary-container"></span>
+                    <span className="w-12 h-px bg-primary-container"></span>
                 </motion.div>
                 <motion.h1 variants={fadeIn} className="font-headline text-5xl md:text-7xl font-black leading-none tracking-tighter text-white">
                     Terms of <span className="text-primary-container">Service</span>

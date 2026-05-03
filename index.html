@@ -29,7 +29,7 @@
 
     <style>
       /* Critical styles for the initial loader */
-      body { margin: 0; background: #09090B; }
+      body { margin: 0; background: #000D0B; }
       .initial-loader {
         position: fixed;
         inset: 0;
@@ -37,7 +37,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: #09090B;
+        background: #000D0B;
         z-index: 9999;
         font-family: sans-serif;
       }
@@ -50,14 +50,14 @@
       .loader-bar {
         width: 120px;
         height: 2px;
-        background: rgba(0, 255, 194, 0.1);
+        background: rgba(0, 104, 55, 0.1);
         border-radius: 4px;
         overflow: hidden;
       }
       .loader-progress {
         width: 40%;
         height: 100%;
-        background: #00FFC2;
+        background: #006837;
         border-radius: 4px;
         animation: slide 1.5s ease-in-out infinite;
       }
@@ -71,7 +71,7 @@
       }
     </style>
   </head>
-  <body class="bg-[#09090B] selection:bg-[#00FFC2]/30 selection:text-[#00FFC2]">
+  <body class="bg-[#000D0B] selection:bg-[#006837]/30 selection:text-[#006837]">
     <div id="root">
       <!-- Initial Loading State -->
       <div class="initial-loader">
@@ -84,7 +84,7 @@
 
     <!-- Static Fallback for SEO Crawlers (Hidden from users with JS) -->
     <noscript>
-      <div style="padding: 40px; font-family: sans-serif; color: #fff; background: #09090b; min-height: 100vh;">
+      <div style="padding: 40px; font-family: sans-serif; color: #fff; background: #000D0B; min-height: 100vh;">
         <h1>MoneyArk – Professional Money Manager & Asset Tracker</h1>
         <p>Master the flow of your assets. Track income, expenses, and monthly budgets all in one place. MoneyArk keeps your finances clear, private, and always up to date with professional-grade asset management features.</p>
         <h2>Key Features:</h2>

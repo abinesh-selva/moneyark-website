@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             {/* Giant Brand Wordmark */}
             <div className="relative w-full overflow-hidden mt-12 select-none pointer-events-none">
-                <p className="text-[21vw] font-headline font-black leading-none tracking-tighter text-center whitespace-nowrap bg-gradient-to-b from-[#FBFFFA]/10 to-transparent bg-clip-text text-transparent">
+                <p className="text-6xl md:text-9xl lg:text-[230px] font-headline font-black leading-none tracking-tighter text-center whitespace-nowrap bg-gradient-to-b from-[#FBFFFA]/10 to-transparent bg-clip-text text-transparent">
                     MONEYARK
                 </p>
             </div>

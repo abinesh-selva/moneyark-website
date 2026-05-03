@@ -150,8 +150,8 @@ const Home = () => {
                                     </div>
                                     <div className="font-data text-4xl font-bold tracking-tighter">{symbol}84,320.00</div>
                                     <div className="h-32 w-full relative">
-                                        <svg className="w-full h-full drop-shadow-[0_0_8px_rgba(0,255,194,0.4)]" viewBox="0 0 100 40">
-                                            <path d="M0 35 Q 20 5, 40 25 T 80 10 T 100 5" fill="none" stroke="#00FFC2" strokeWidth="2"></path>
+                                        <svg className="w-full h-full drop-shadow-[0_0_8px_rgba(240,160,145,0.4)]" viewBox="0 0 100 40">
+                                            <path d="M0 35 Q 20 5, 40 25 T 80 10 T 100 5" fill="none" stroke="#F0A091" strokeWidth="2"></path>
                                         </svg>
                                     </div>
                                     <div className="space-y-4">
@@ -360,7 +360,7 @@ const Home = () => {
                         </div>
                         <div className="relative flex justify-center py-8">
                             <span className="material-symbols-outlined text-8xl text-primary-container/20" style={{ fontVariationSettings: "'FILL' 1" }}>fingerprint</span>
-                            <div className="absolute top-1/2 left-0 w-full h-px bg-primary-container/50 shadow-[0_0_15px_rgba(0,255,194,0.8)] animate-scan"></div>
+                            <div className="absolute top-1/2 left-0 w-full h-px bg-primary-container/50 shadow-[0_0_15px_rgba(240,160,145,0.8)] animate-scan"></div>
                         </div>
                     </motion.div>
                     {/* Card 3 (30%) */}
@@ -423,7 +423,7 @@ const Home = () => {
                                     const hasEntry = [3,7,10,18,22,25].includes(day);
                                     return (
                                         <div key={i} className={`h-9 rounded-xl flex items-center justify-center text-xs font-bold transition-all duration-300
-                                            ${isToday ? 'bg-primary-container text-background shadow-[0_0_16px_rgba(0,255,194,0.6)]' :
+                                            ${isToday ? 'bg-primary-container text-background shadow-[0_0_16px_rgba(240,160,145,0.6)]' :
                                             hasEntry ? 'bg-primary-container/15 text-primary-container border border-primary-container/30' :
                                             'bg-surface-container-high/20 text-on-surface-variant/40'}`}>
                                             {day}
@@ -519,7 +519,7 @@ const Home = () => {
                     <div className="flex flex-col md:flex-row items-stretch min-h-[280px]">
                         {/* Visual */}
                         <div className="md:w-1/2 bg-surface-container-lowest/60 p-10 flex items-center justify-center gap-4 border-b md:border-b-0 md:border-r border-white/5">
-                            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl bg-zinc-900 border-2 border-primary-container shadow-[0_0_30px_rgba(0,255,194,0.25)] flex-1 cursor-pointer">
+                            <div className="flex flex-col items-center gap-3 p-6 rounded-2xl bg-zinc-900 border-2 border-primary-container shadow-[0_0_30px_rgba(240,160,145,0.25)] flex-1 cursor-pointer">
                                 <span className="material-symbols-outlined text-3xl text-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>dark_mode</span>
                                 <span className="text-[9px] font-label font-bold uppercase tracking-widest text-primary-container">Dark</span>
                                 <span className="text-[8px] text-primary-container/50 font-label">Active</span>
@@ -572,7 +572,7 @@ const Home = () => {
                                     { flag: '🇯🇵', code: 'JPY', sym: '¥' },
                                 ].map((c, i) => (
                                     <div key={c.code} className={`flex items-center gap-3 px-4 py-3 rounded-xl border transition-all duration-300
-                                        ${i === 3 ? 'bg-primary-container/20 border-primary-container/50 shadow-[0_0_12px_rgba(0,255,194,0.2)]' : 'bg-surface-container-high/30 border-primary-container/10 group-hover:border-primary-container/20'}`}>
+                                        ${i === 3 ? 'bg-primary-container/20 border-primary-container/50 shadow-[0_0_12px_rgba(240,160,145,0.2)]' : 'bg-surface-container-high/30 border-primary-container/10 group-hover:border-primary-container/20'}`}>
                                         <span className="text-xl">{c.flag}</span>
                                         <div>
                                             <div className="text-xs font-label font-bold text-primary-container">{c.code}</div>

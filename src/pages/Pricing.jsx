@@ -81,7 +81,7 @@ const Pricing = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="max-w-2xl mx-auto mb-32"
             >
-                <div className="glass-card group p-12 flex flex-col justify-between relative bg-primary-container/5 border-primary-container/20 shadow-[0_0_80px_rgba(0,255,194,0.08)]">
+                <div className="glass-card group p-12 flex flex-col justify-between relative bg-primary-container/5 border-primary-container/20 shadow-[0_0_80px_rgba(240,160,145,0.12)]">
                     <div className="absolute top-0 right-10 -translate-y-1/2 bg-primary-container text-zinc-950 px-4 py-1 rounded-full text-[9px] font-black tracking-widest uppercase">All Features Included</div>
                     <div className="space-y-10">
                         <div className="flex justify-between items-start">
@@ -147,15 +147,15 @@ const Pricing = () => {
             >
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <motion.div variants={fadeIn} className="space-y-4">
-                        <h4 className="text-[#00FFC2] font-headline font-bold text-xl">No Data Selling</h4>
+                        <h4 className="text-primary-container font-headline font-bold text-xl">No Data Selling</h4>
                         <p className="text-on-surface-variant text-sm leading-relaxed">Your privacy is our product. We don't sell your data because your sovereignty is what we build for.</p>
                     </motion.div>
                     <motion.div variants={fadeIn} className="space-y-4">
-                        <h4 className="text-[#00FFC2] font-headline font-bold text-xl">Privacy First</h4>
+                        <h4 className="text-primary-container font-headline font-bold text-xl">Privacy First</h4>
                         <p className="text-on-surface-variant text-sm leading-relaxed">Your data stays yours. Local SQLite storage means your history is never locked behind a server.</p>
                     </motion.div>
                     <motion.div variants={fadeIn} className="space-y-4">
-                        <h4 className="text-[#00FFC2] font-headline font-bold text-xl">No Subscriptions</h4>
+                        <h4 className="text-primary-container font-headline font-bold text-xl">No Subscriptions</h4>
                         <p className="text-on-surface-variant text-sm leading-relaxed">No monthly bills, no paywalls. Get the full app experience without any recurring charges.</p>
                     </motion.div>
                 </div>

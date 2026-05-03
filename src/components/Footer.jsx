@@ -12,15 +12,15 @@ const Footer = () => {
                             Copyright © {new Date().getFullYear()} MONEYARK. All rights reserved
                         </p>
                         <div className="flex gap-2">
-                            <span className="w-1 h-1 rounded-full bg-[#00FFC2]/20"></span>
-                            <span className="w-1 h-1 rounded-full bg-[#00FFC2]/40"></span>
-                            <span className="w-1 h-1 rounded-full bg-[#00FFC2]/60"></span>
+                            <span className="w-1 h-1 rounded-full bg-primary-container/20"></span>
+                            <span className="w-1 h-1 rounded-full bg-primary-container/40"></span>
+                            <span className="w-1 h-1 rounded-full bg-primary-container/60"></span>
                         </div>
                     </div>
                     <div className="flex items-center gap-12">
-                        <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-[#00FFC2] transition-colors" to="/privacy">Privacy</Link>
-                        <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-[#00FFC2] transition-colors" to="/terms">Terms</Link>
-                        <a className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-[#00FFC2] transition-colors" href="https://twitter.com/moneyark">Twitter</a>
+                        <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-primary-container transition-colors" to="/privacy">Privacy</Link>
+                        <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-primary-container transition-colors" to="/terms">Terms</Link>
+                        <a className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-primary-container transition-colors" href="https://twitter.com/moneyark">Twitter</a>
                     </div>
                 </div>
             </div>

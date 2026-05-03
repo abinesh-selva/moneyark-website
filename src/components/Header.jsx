@@ -12,13 +12,13 @@ const Header = ({ scrolled }) => {
             <span className="text-2xl font-black text-on-primary tracking-tighter">MoneyArk</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8">
-          <Link to="/" className={`${isActive('/') ? 'text-[#00FFC2]' : 'text-on-primary/60'} font-bold transition-all duration-200 hover:text-[#00FFC2]`}>Home</Link>
-          <Link to="/pricing" className={`${isActive('/pricing') ? 'text-[#00FFC2]' : 'text-on-primary/60 hover:text-[#00FFC2]'} transition-colors duration-300`}>Free</Link>
-          <Link to="/privacy" className={`${isActive('/privacy') ? 'text-[#00FFC2]' : 'text-on-primary/60 hover:text-[#00FFC2]'} transition-colors duration-300`}>Privacy</Link>
-          <Link to="/terms" className={`${isActive('/terms') ? 'text-[#00FFC2]' : 'text-on-primary/60 hover:text-[#00FFC2]'} transition-colors duration-300`}>Terms</Link>
+          <Link to="/" className={`${isActive('/') ? 'text-primary-container' : 'text-on-primary/60'} font-bold transition-all duration-200 hover:text-primary-container`}>Home</Link>
+          <Link to="/pricing" className={`${isActive('/pricing') ? 'text-primary-container' : 'text-on-primary/60 hover:text-primary-container'} transition-colors duration-300`}>Free</Link>
+          <Link to="/privacy" className={`${isActive('/privacy') ? 'text-primary-container' : 'text-on-primary/60 hover:text-primary-container'} transition-colors duration-300`}>Privacy</Link>
+          <Link to="/terms" className={`${isActive('/terms') ? 'text-primary-container' : 'text-on-primary/60 hover:text-primary-container'} transition-colors duration-300`}>Terms</Link>
         </nav>
         <div className="flex items-center gap-4">
-          <a href="/moneyark.apk" download="MoneyArk.apk" className="bg-primary-fixed text-on-primary-fixed px-6 py-2 rounded-full text-sm font-bold hover:shadow-[0_0_20px_rgba(0,255,194,0.4)] transition-all">Download</a>
+          <a href="/moneyark.apk" download="MoneyArk.apk" className="bg-primary-fixed text-on-primary-fixed px-6 py-2 rounded-full text-sm font-bold hover:shadow-[0_0_20px_rgba(240,160,145,0.4)] transition-all">Download</a>
         </div>
       </div>
     </header>

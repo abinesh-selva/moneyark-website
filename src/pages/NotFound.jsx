@@ -30,7 +30,7 @@ const NotFound = () => {
             </p>
             <Link
               to="/"
-              className="bg-primary-container text-background px-8 py-3 rounded-xl font-headline font-bold hover:bg-white transition-all shadow-[0_0_20px_rgba(0,255,194,0.3)]"
+              className="bg-primary-container text-background px-8 py-3 rounded-xl font-headline font-bold hover:bg-white transition-all shadow-[0_0_20px_rgba(240,160,145,0.3)]"
             >
               Go back home
             </Link>

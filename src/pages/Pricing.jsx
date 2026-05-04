@@ -44,12 +44,12 @@ const Pricing = () => {
             <meta name="description" content="MoneyArk is completely free to download. No subscriptions, no premium tiers, no hidden fees. Get full access to every feature on Android at zero cost." />
             <meta name="keywords" content="free finance app, free budget tracker, no subscription expense tracker, moneyark free, android finance app free" />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://moneyark.app/pricing" />
+            <link rel="canonical" href="https://moneyark.vercel.app/pricing" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://moneyark.app/pricing" />
+            <meta property="og:url" content="https://moneyark.vercel.app/pricing" />
             <meta property="og:title" content="MoneyArk Is Free — No Cost, No Catch" />
             <meta property="og:description" content="No subscriptions, no premium tiers. Every feature, free forever." />
-            <meta property="og:image" content="https://moneyark.app/og-image.png" />
+            <meta property="og:image" content="https://moneyark.vercel.app/og-image.png" />
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content="MoneyArk Is Free — No Cost, No Catch" />
             <meta name="twitter:description" content="No subscriptions, no premium tiers. Every feature, free." />

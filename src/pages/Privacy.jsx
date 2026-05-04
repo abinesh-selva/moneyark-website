@@ -28,9 +28,9 @@ const Privacy = () => {
             <title>Privacy Policy — MoneyArk</title>
             <meta name="description" content="MoneyArk's commitment to your financial privacy. We categorize data collection, specify retention periods, and ensure your data stays on your device." />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://moneyark.app/privacy" />
+            <link rel="canonical" href="https://moneyark.vercel.app/privacy" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://moneyark.app/privacy" />
+            <meta property="og:url" content="https://moneyark.vercel.app/privacy" />
             <meta property="og:title" content="Privacy Policy — MoneyArk" />
             <meta property="og:description" content="We don't sell your data. Your finances stay on your device." />
         </Helmet>

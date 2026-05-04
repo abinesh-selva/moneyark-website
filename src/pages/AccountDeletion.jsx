@@ -13,9 +13,9 @@ const AccountDeletion = () => {
         <title>Delete Your Account — MoneyArk</title>
         <meta name="description" content="How to delete your MoneyArk account and remove all associated data. Step-by-step instructions for in-app deletion and data retention details." />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://moneyark.app/account-deletion" />
+        <link rel="canonical" href="https://moneyark.vercel.app/account-deletion" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moneyark.app/account-deletion" />
+        <meta property="og:url" content="https://moneyark.vercel.app/account-deletion" />
         <meta property="og:title" content="Delete Your Account — MoneyArk" />
         <meta property="og:description" content="How to permanently delete your MoneyArk account and all associated data." />
       </Helmet>

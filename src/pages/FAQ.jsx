@@ -66,9 +66,9 @@ const FAQ = () => {
         <meta name="description" content="Frequently asked questions about MoneyArk — how to install the APK, security, offline usage, syncing, supported currencies, and more." />
         <meta name="keywords" content="moneyark faq, money manager help, expense tracker questions, android budget app help, free finance app faq" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://moneyark.app/faq" />
+        <link rel="canonical" href="https://moneyark.vercel.app/faq" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moneyark.app/faq" />
+        <meta property="og:url" content="https://moneyark.vercel.app/faq" />
         <meta property="og:title" content="FAQ — MoneyArk Money Manager" />
         <meta property="og:description" content="Common questions about installing, securing, and using MoneyArk on Android." />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

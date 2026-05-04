@@ -28,9 +28,9 @@ const Terms = () => {
             <title>Terms & Conditions — MoneyArk</title>
             <meta name="description" content="Read MoneyArk's Terms and Conditions of Use. Understand your rights and responsibilities when using our personal finance management software." />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://moneyark.app/terms" />
+            <link rel="canonical" href="https://moneyark.vercel.app/terms" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://moneyark.app/terms" />
+            <meta property="og:url" content="https://moneyark.vercel.app/terms" />
             <meta property="og:title" content="Terms & Conditions — MoneyArk" />
             <meta property="og:description" content="MoneyArk's Terms of Use — your rights and responsibilities when using our finance app." />
         </Helmet>

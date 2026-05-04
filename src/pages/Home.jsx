@@ -59,11 +59,11 @@ const Home = () => {
                 <meta name="description" content={`The easiest way to master your assets. MoneyArk is a free Android money manager with ${downloads || "growing"} downloads. Track expenses, manage budgets, and analyze your finances with asset management features.`} />
                 <meta name="keywords" content="money manager, expense tracker, personal finance app, asset management, budget tracker, free finance manager, moneyark android, monthly budget" />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://moneyark.app/" />
+                <link rel="canonical" href="https://moneyark.vercel.app/" />
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://moneyark.app/" />
+                <meta property="og:url" content="https://moneyark.vercel.app/" />
                 <meta property="og:title" content="MoneyArk — Money Manager & Expense Tracker" />
                 <meta property="og:description" content="Master the flow of your assets. Track income, expenses, and manage budgets in one secure, private app for Android." />
                 <meta property="og:image" content="/og-image.png" />

@@ -1,0 +1,27 @@
+{
+  "name": "MoneyArk — Money Manager & Personal Finance Tracker",
+  "short_name": "MoneyArk",
+  "description": "Free Android money manager. Track expenses, manage budgets, analyze finances offline.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E2A47",
+  "theme_color": "#0E2A47",
+  "categories": ["finance", "productivity", "lifestyle"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

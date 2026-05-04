@@ -17,9 +17,11 @@ const Footer = () => {
                             <span className="w-1 h-1 rounded-full bg-primary-container/60"></span>
                         </div>
                     </div>
-                    <div className="flex items-center gap-12">
+                    <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 md:gap-12">
+                        <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-primary-container transition-colors" to="/faq">FAQ</Link>
                         <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-primary-container transition-colors" to="/privacy">Privacy</Link>
                         <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-primary-container transition-colors" to="/terms">Terms</Link>
+                        <Link className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-primary-container transition-colors" to="/account-deletion">Delete Account</Link>
                         <a className="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-primary/30 hover:text-primary-container transition-colors" href="https://twitter.com/moneyark">Twitter</a>
                     </div>
                 </div>

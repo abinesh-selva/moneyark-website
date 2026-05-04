@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Don't index the raw APK as a page
+Disallow: /moneyark.apk
+
+Sitemap: https://moneyark.app/sitemap.xml

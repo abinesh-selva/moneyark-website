@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0E2A47" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MoneyArk — Money Manager & Personal Finance Tracker</title>
     <meta name="description" content="Master the flow of your assets with MoneyArk, the #1 free personal finance manager and budget tracker. Secure expense tracking, asset management, and smart analytics for Android." />
     <meta name="keywords" content="money manager, personal finance tracker, expense tracker, asset management, budget app, free finance manager, android budgeting, moneyark app" />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://moneyark.app/" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -21,6 +24,56 @@
     <meta name="twitter:title" content="MoneyArk — Personal Finance Manager" />
     <meta name="twitter:description" content="The easiest way to master your assets. Track expenses and manage budgets on Android." />
     <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- Structured data: Organization + SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://moneyark.app/#organization",
+          "name": "MoneyArk",
+          "url": "https://moneyark.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://moneyark.app/logo.png"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://moneyark.app/#website",
+          "url": "https://moneyark.app/",
+          "name": "MoneyArk",
+          "publisher": { "@id": "https://moneyark.app/#organization" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "MoneyArk",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Android",
+          "url": "https://moneyark.app/",
+          "downloadUrl": "https://moneyark.app/moneyark.apk",
+          "fileSize": "94MB",
+          "softwareVersion": "2024.1",
+          "description": "Free Android money manager. Track expenses, manage budgets, analyze finances offline. Privacy-first, AES-256 encrypted, 15+ currencies supported.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "screenshot": [
+            "https://moneyark.app/assets/dashboard.png",
+            "https://moneyark.app/assets/analytics.png",
+            "https://moneyark.app/assets/budget.png",
+            "https://moneyark.app/assets/history.png"
+          ],
+          "publisher": { "@id": "https://moneyark.app/#organization" }
+        }
+      ]
+    }
+    </script>
 
     <!-- Preconnect for Material Symbols icon font only -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

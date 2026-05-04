@@ -11,6 +11,8 @@ const Home = lazy(() => import('./pages/Home'));
 const Pricing = lazy(() => import('./pages/Pricing'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
+const FAQ = lazy(() => import('./pages/FAQ'));
+const AccountDeletion = lazy(() => import('./pages/AccountDeletion'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Loading fallback component that matches the brand identity
@@ -51,6 +53,8 @@ function App() {
               <Route path="/pricing" element={<RouteWrappers.ScrollToTop><Pricing /></RouteWrappers.ScrollToTop>} />
               <Route path="/privacy" element={<RouteWrappers.ScrollToTop><Privacy /></RouteWrappers.ScrollToTop>} />
               <Route path="/terms" element={<RouteWrappers.ScrollToTop><Terms /></RouteWrappers.ScrollToTop>} />
+              <Route path="/faq" element={<RouteWrappers.ScrollToTop><FAQ /></RouteWrappers.ScrollToTop>} />
+              <Route path="/account-deletion" element={<RouteWrappers.ScrollToTop><AccountDeletion /></RouteWrappers.ScrollToTop>} />
               {/* Catch-all route for 404 */}
               <Route path="*" element={<NotFound />} />
             </Routes>

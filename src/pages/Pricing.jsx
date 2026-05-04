@@ -98,11 +98,13 @@ const Pricing = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <motion.ul variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="space-y-5">
                                 {[
+                                    'Personal Finance AI',
+                                    'Voice Expense Tracking',
+                                    'SMS Auto-Scan',
+                                    'Receipt Scanner',
+                                    'Smart Budget Planner',
                                     'Real-time Sync',
                                     'Recurring Transactions',
-                                    'CSV Export',
-                                    'Biometric App Lock',
-                                    'Offline-First Storage',
                                     'Calendar View'
                                 ].map((feature, i) => (
                                     <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-sm text-on-primary font-medium group-hover:text-primary-container transition-colors">
@@ -116,7 +118,10 @@ const Pricing = () => {
                                     'Unlimited Budgets & Accounts',
                                     'Reports & Analytics Charts',
                                     '15 Currencies Supported',
-                                    'Smart Transaction Filters'
+                                    'Smart Transaction Filters',
+                                    'Biometric App Lock',
+                                    'Offline-First Storage',
+                                    'CSV Export'
                                 ].map((feature, i) => (
                                     <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-sm text-on-primary font-medium group-hover:text-primary-container transition-colors">
                                         <span className="material-symbols-outlined text-lg text-primary-container">check_circle</span>

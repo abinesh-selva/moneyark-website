@@ -9,6 +9,26 @@ const faqs = [
     a: "Yes. MoneyArk is 100% free with every feature included — no premium tiers, no subscriptions, no hidden fees, and no ads. We don't sell your data either; the app stays free because it's offline-first and self-contained."
   },
   {
+    q: "Can MoneyArk track expenses with voice?",
+    a: "Yes. Tap the microphone and say something like \"Spent twenty dollars on coffee\" — MoneyArk parses the amount, category, and merchant automatically and creates the transaction. Hands-free expense logging is available out of the box."
+  },
+  {
+    q: "Does MoneyArk scan SMS messages from my bank?",
+    a: "Yes. With your permission, MoneyArk reads transactional SMS alerts from your bank and UPI services and auto-creates matching entries — debits, credits, and transfers. SMS parsing happens entirely on-device; no message content is sent to our servers."
+  },
+  {
+    q: "How does the receipt scanner work?",
+    a: "Open the camera in the app and snap any receipt. Vision AI extracts the vendor, total amount, date, and suggests a category in seconds. You can review and edit before saving — perfect for cash purchases or business expenses."
+  },
+  {
+    q: "What is the Personal Finance AI?",
+    a: "It's a private AI coach built into MoneyArk that analyses up to 90 days of your transactions to answer questions in plain English — \"How much did I spend on dining?\", \"Am I on budget this month?\", \"Where did I overspend?\". Your financial data stays encrypted and never leaves your device unencrypted."
+  },
+  {
+    q: "What does the Smart Budget Planner do?",
+    a: "Instead of guessing, the Smart Budget Planner studies your last 90 days of spending and proposes realistic budgets per category. You can accept, tweak, or override the suggestions — and the planner re-learns as your habits change."
+  },
+  {
     q: "Does MoneyArk work offline?",
     a: "Yes. MoneyArk is offline-first. All your transactions, budgets, and analytics are stored locally on your device using SQLite — you don't need an internet connection to track expenses or view your data. Optional cloud sync is available if you want to back up across devices."
   },

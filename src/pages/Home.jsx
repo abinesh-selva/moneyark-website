@@ -57,7 +57,7 @@ const Home = () => {
             <Helmet>
                 <title>MoneyArk — Money Manager & Personal Finance Tracker</title>
                 <meta name="description" content={`The easiest way to master your assets. MoneyArk is a free Android money manager with ${downloads || "growing"} downloads. Track expenses, manage budgets, and analyze your finances with asset management features.`} />
-                <meta name="keywords" content="money manager, expense tracker, personal finance app, asset management, budget tracker, free finance manager, moneyark android, monthly budget" />
+                <meta name="keywords" content="money manager, expense tracker, personal finance app, asset management, budget tracker, free finance manager, moneyark android, monthly budget, ai finance assistant, voice expense tracker, sms expense scan, receipt scanner app, smart budget planner, ai budget app" />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://moneyark.vercel.app/" />
 
@@ -277,22 +277,22 @@ const Home = () => {
                         { 
                             label: 'Dashboard', 
                             desc: 'Total balance at a glance', 
-                            img: '/assets/dashboard.png' 
+                            img: '/assets/dashboard.jpg' 
                         },
                         { 
                             label: 'History', 
                             desc: 'Deep transaction search', 
-                            img: '/assets/history.png' 
+                            img: '/assets/history.jpg' 
                         },
                         { 
                             label: 'Budgets', 
                             desc: 'Category-specific limits', 
-                            img: '/assets/budget.png' 
+                            img: '/assets/budget.jpg' 
                         },
                         { 
                             label: 'Analytics', 
                             desc: 'Advanced spending charts', 
-                            img: '/assets/analytics.png' 
+                            img: '/assets/analytics.jpg' 
                         }
                     ].map((screen, i) => (
                         <div key={screen.label} className="flex-shrink-0 w-[240px] md:w-[280px] snap-center">
@@ -392,6 +392,155 @@ const Home = () => {
                             <div className="flex-1 bg-primary-container/20 h-1/2 rounded-t hover:h-2/3 transition-all duration-500"></div>
                             <div className="flex-1 bg-on-tertiary-container/20 h-1/4 rounded-t hover:h-1/3 transition-all duration-500"></div>
                             <div className="flex-1 bg-primary-container/20 h-2/3 rounded-t hover:h-3/4 transition-all duration-500"></div>
+                        </div>
+                    </motion.div>
+                </motion.div>
+            </section>
+
+            {/* Smart & Automated — AI / Voice / SMS / Receipt / Budget Planner */}
+            <section className="wrapper py-32">
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="mb-16 max-w-2xl"
+                >
+                    <div className="inline-flex items-center gap-4 text-primary-container font-label text-xs tracking-widest uppercase mb-4">
+                        <span className="w-12 h-px bg-primary-container"></span>
+                        <span>Smart & Automated</span>
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-headline font-black mb-4">AI that does the work for you</h2>
+                    <p className="text-on-surface-variant font-body">Stop typing every expense. Let MoneyArk capture, categorize, and plan automatically.</p>
+                </motion.div>
+
+                <motion.div
+                  variants={staggerContainer}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-100px" }}
+                  className="grid grid-cols-1 md:grid-cols-6 gap-6"
+                >
+                    {/* 1. Personal Finance AI — large hero card */}
+                    <motion.div variants={fadeIn} className="md:col-span-4 glass-card rounded-2xl p-10 flex flex-col justify-between bg-primary-container/5 border-primary-container/20 relative overflow-hidden min-h-[320px]">
+                        <div className="absolute -top-24 -right-24 w-72 h-72 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+                        <div className="relative z-10">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/15 border border-primary-container/30 w-fit mb-6">
+                                <span className="material-symbols-outlined text-sm text-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
+                                <span className="text-[9px] font-label font-bold uppercase tracking-widest text-primary-container">AI Coach</span>
+                            </div>
+                            <h3 className="text-3xl font-headline font-black mb-3">Personal Finance AI</h3>
+                            <p className="text-on-surface-variant max-w-md leading-relaxed">Ask anything in plain English. <em>"How much did I spend on food this month?"</em> Your private AI assistant analyses up to 90 days of activity to answer instantly with full context.</p>
+                        </div>
+                        <div className="relative z-10 mt-8 space-y-3">
+                            <div className="flex items-start gap-3">
+                                <span className="material-symbols-outlined text-base text-on-surface-variant/60 mt-1">person</span>
+                                <div className="flex-1 px-4 py-2.5 rounded-2xl rounded-tl-sm bg-surface-container-high/40 border border-white/5 text-sm text-on-surface-variant">
+                                    Where am I overspending?
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-3 justify-end">
+                                <div className="flex-1 px-4 py-2.5 rounded-2xl rounded-tr-sm bg-primary-container/15 border border-primary-container/30 text-sm text-primary-container max-w-md">
+                                    Dining is up 32% vs. last month — mostly weekend takeout.
+                                </div>
+                                <span className="material-symbols-outlined text-base text-primary-container mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* 2. Voice Tracking */}
+                    <motion.div variants={fadeIn} className="md:col-span-2 glass-card rounded-2xl p-8 flex flex-col justify-between min-h-[320px] relative overflow-hidden">
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-tertiary-container/10 border border-on-tertiary-container/25 w-fit mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+                                <span className="text-[9px] font-label font-bold uppercase tracking-widest text-on-tertiary-container">Hands-Free</span>
+                            </div>
+                            <h3 className="text-2xl font-headline font-black mb-2">Voice Tracking</h3>
+                            <p className="text-on-surface-variant text-sm leading-relaxed">Say <em>"Spent twenty on coffee"</em>. We do the rest.</p>
+                        </div>
+                        <div className="flex items-center justify-center pt-8">
+                            <div className="relative">
+                                <div className="absolute inset-0 rounded-full bg-primary-container/20 blur-xl animate-pulse"></div>
+                                <div className="relative w-20 h-20 rounded-full bg-primary-container/15 border border-primary-container/40 flex items-center justify-center">
+                                    <span className="material-symbols-outlined text-4xl text-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>mic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* 3. SMS Auto-Scan */}
+                    <motion.div variants={fadeIn} className="md:col-span-2 glass-card rounded-2xl p-8 flex flex-col justify-between min-h-[280px]">
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 border border-primary-container/25 w-fit mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                                <span className="text-[9px] font-label font-bold uppercase tracking-widest text-primary-container">Auto-Detect</span>
+                            </div>
+                            <h3 className="text-2xl font-headline font-black mb-2">SMS Auto-Scan</h3>
+                            <p className="text-on-surface-variant text-sm leading-relaxed">Bank & UPI alerts logged the moment they arrive — zero manual entry.</p>
+                        </div>
+                        <div className="mt-6 space-y-2">
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high/40 border border-white/5">
+                                <span className="material-symbols-outlined text-sm text-on-surface-variant/60">sms</span>
+                                <span className="text-[10px] font-mono text-on-surface-variant/80 truncate">Debited ₹450 to Cafe...</span>
+                                <span className="material-symbols-outlined text-sm text-primary-container ml-auto" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                            </div>
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-container/10 border border-primary-container/30">
+                                <span className="material-symbols-outlined text-sm text-primary-container">sms</span>
+                                <span className="text-[10px] font-mono text-primary-container truncate">Credited ₹50,000 Salary...</span>
+                                <span className="material-symbols-outlined text-sm text-primary-container ml-auto" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* 4. Receipt Scanner */}
+                    <motion.div variants={fadeIn} className="md:col-span-2 glass-card rounded-2xl p-8 flex flex-col justify-between min-h-[280px]">
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-tertiary-container/10 border border-on-tertiary-container/25 w-fit mb-6">
+                                <span className="material-symbols-outlined text-sm text-on-tertiary-container">document_scanner</span>
+                                <span className="text-[9px] font-label font-bold uppercase tracking-widest text-on-tertiary-container">Vision AI</span>
+                            </div>
+                            <h3 className="text-2xl font-headline font-black mb-2">Receipt Scanner</h3>
+                            <p className="text-on-surface-variant text-sm leading-relaxed">Snap any receipt. Vendor, amount, and date are parsed in seconds.</p>
+                        </div>
+                        <div className="mt-6 flex items-center justify-center">
+                            <div className="relative w-24 h-32 rounded-lg bg-surface-container-high/40 border border-white/10 overflow-hidden">
+                                <div className="p-2 space-y-1">
+                                    <div className="h-1 w-3/4 bg-on-surface-variant/30 rounded"></div>
+                                    <div className="h-1 w-full bg-on-surface-variant/30 rounded"></div>
+                                    <div className="h-1 w-2/3 bg-on-surface-variant/30 rounded"></div>
+                                    <div className="h-1 w-5/6 bg-on-surface-variant/30 rounded"></div>
+                                    <div className="h-1 w-1/2 bg-primary-container/60 rounded mt-2"></div>
+                                </div>
+                                <div className="absolute inset-x-0 top-1/2 h-px bg-primary-container/60 shadow-[0_0_10px_rgba(240,160,145,0.6)] animate-scan"></div>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* 5. Smart Budget Planner */}
+                    <motion.div variants={fadeIn} className="md:col-span-2 glass-card rounded-2xl p-8 flex flex-col justify-between min-h-[280px]">
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 border border-primary-container/25 w-fit mb-6">
+                                <span className="material-symbols-outlined text-sm text-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>insights</span>
+                                <span className="text-[9px] font-label font-bold uppercase tracking-widest text-primary-container">AI Suggested</span>
+                            </div>
+                            <h3 className="text-2xl font-headline font-black mb-2">Smart Budget Planner</h3>
+                            <p className="text-on-surface-variant text-sm leading-relaxed">Realistic budgets generated from your last 90 days of spending.</p>
+                        </div>
+                        <div className="mt-6 space-y-2">
+                            {[
+                                { label: 'Food', pct: 70 },
+                                { label: 'Transport', pct: 45 },
+                                { label: 'Bills', pct: 88 },
+                            ].map(b => (
+                                <div key={b.label} className="space-y-1">
+                                    <div className="flex justify-between text-[10px] font-label uppercase tracking-widest text-on-surface-variant/70">
+                                        <span>{b.label}</span>
+                                        <span>{b.pct}%</span>
+                                    </div>
+                                    <div className="h-1.5 rounded-full bg-surface-container-high/40 overflow-hidden">
+                                        <div className="h-full bg-primary-container rounded-full" style={{ width: `${b.pct}%` }}></div>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </motion.div>
                 </motion.div>

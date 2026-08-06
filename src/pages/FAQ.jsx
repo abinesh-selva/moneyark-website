@@ -6,59 +6,59 @@ import { motion } from 'framer-motion';
 const faqs = [
   {
     q: "Is MoneyArk really free?",
-    a: "Yes. MoneyArk is 100% free with every feature included — no premium tiers, no subscriptions, no hidden fees, and no ads. We don't sell your data either; the app stays free because it's offline-first and self-contained."
+    a: "Yes. MoneyArk is 100% free with every feature included — no premium tiers, no subscriptions, no hidden fees, and no ads. We don't sell your data; the app is offline-first, secure, and self-contained."
   },
   {
     q: "Can MoneyArk track expenses with voice?",
-    a: "Yes. Tap the microphone and say something like \"Spent twenty dollars on coffee\" — MoneyArk parses the amount, category, and merchant automatically and creates the transaction. Hands-free expense logging is available out of the box."
+    a: "Yes. Tap the microphone and say something like \"Spent twenty dollars on coffee\" — MoneyArk parses the amount, category, and merchant automatically and creates the transaction instantly."
   },
   {
     q: "Does MoneyArk scan SMS messages from my bank?",
-    a: "Yes. With your permission, MoneyArk reads transactional SMS alerts from your bank and UPI services and auto-creates matching entries — debits, credits, and transfers. SMS parsing happens entirely on-device; no message content is sent to our servers."
+    a: "Yes. With your permission, MoneyArk reads transactional SMS alerts from your bank and UPI services on Android and auto-creates matching debit, credit, and transfer entries. SMS parsing happens entirely on-device for total privacy."
   },
   {
     q: "How does the receipt scanner work?",
-    a: "Open the camera in the app and snap any receipt. Vision AI extracts the vendor, total amount, date, and suggests a category in seconds. You can review and edit before saving — perfect for cash purchases or business expenses."
+    a: "Snap any paper or digital receipt in the app. On-device OCR text recognition (Google ML Kit) extracts the vendor, total amount, date, and suggests a category in seconds so you can review and save with one tap."
+  },
+  {
+    q: "Can I import bank statements from PDF files?",
+    a: "Yes. MoneyArk includes a native PDF statement parser. Upload your bank statement PDF directly into the smart creation modal, and MoneyArk automatically extracts and structures your transaction entries."
   },
   {
     q: "What is the Personal Finance AI?",
-    a: "It's a private AI coach built into MoneyArk that analyses up to 90 days of your transactions to answer questions in plain English — \"How much did I spend on dining?\", \"Am I on budget this month?\", \"Where did I overspend?\". Your financial data stays encrypted and never leaves your device unencrypted."
+    a: "It's an interactive AI assistant powered by Google Gemini built into MoneyArk. It studies up to 90 days of your financial history to answer questions in natural language — \"Where did I overspend this month?\", \"How much went to dining?\", or \"Can I afford a $300 purchase?\"."
   },
   {
-    q: "What does the Smart Budget Planner do?",
-    a: "Instead of guessing, the Smart Budget Planner studies your last 90 days of spending and proposes realistic budgets per category. You can accept, tweak, or override the suggestions — and the planner re-learns as your habits change."
+    q: "Does MoneyArk support Savings Goals and Bill Reminders?",
+    a: "Yes! You can set up custom Savings Goals with target amounts and deadlines to track progress, as well as track recurring Bills and subscriptions with automatic local notifications so you never miss a payment."
+  },
+  {
+    q: "Can I manage family or group finances?",
+    a: "Yes. MoneyArk includes a dedicated Family & Shared Finances module allowing you to track shared budgets, joint expenses, and individual member contributions."
   },
   {
     q: "Does MoneyArk work offline?",
-    a: "Yes. MoneyArk is offline-first. All your transactions, budgets, and analytics are stored locally on your device using SQLite — you don't need an internet connection to track expenses or view your data. Optional cloud sync is available if you want to back up across devices."
+    a: "Yes. MoneyArk is offline-first. All your transactions, budgets, and analytics are stored locally on your device using SQLite — you don't need an internet connection to track expenses or view your data. Optional cloud sync powered by Supabase is available if you want to sync across devices."
   },
   {
     q: "Is my financial data secure?",
-    a: "Yes. On-device storage uses AES-256 encryption with keys tied to your device's biometric identity. The app supports fingerprint and face-ID lock. We never sell or share your financial data with third parties."
+    a: "Yes. On-device storage uses encrypted local databases and secure storage with keys tied to your device's biometric identity. The app supports biometric fingerprint and Face-ID lock. We never sell or share your financial data with third parties."
   },
   {
     q: "What Android version do I need?",
-    a: "MoneyArk requires Android 8.0 (Oreo) or newer. The app is roughly 94 MB."
+    a: "MoneyArk requires Android 8.0 (Oreo) or newer. The APK installer download is roughly 96 MB."
   },
   {
     q: "How do I install the APK file?",
     a: "Download moneyark.apk from this site, open it on your Android device, and approve installation. You may need to enable \"Install from unknown sources\" in your device's security settings the first time. The app is signed and verified."
   },
   {
-    q: "Can I sync between devices?",
-    a: "Yes. MoneyArk supports optional secure cloud sync so your data stays consistent across phones and tablets. Sync is end-to-end protected and entirely opt-in — if you skip it, your data never leaves your device."
-  },
-  {
     q: "How many currencies does MoneyArk support?",
-    a: "15+ major currencies including USD, EUR, GBP, JPY, INR, CAD, AUD, and more. You can change your default currency anytime in settings."
-  },
-  {
-    q: "Is MoneyArk available on iOS?",
-    a: "MoneyArk is currently Android-only. iOS support is on our roadmap — follow us on social to be notified when it launches."
+    a: "15+ major currencies including USD, EUR, GBP, JPY, INR, CAD, AUD, AED, and more. Default currency is automatically detected based on your location and can be customized anytime."
   },
   {
     q: "How do I export my data?",
-    a: "Open the app → Settings → Export Data. You can export your transactions and budgets as CSV for spreadsheets or as encrypted backup files for safekeeping."
+    a: "Open the app → Reports / Settings → Export. You can generate professional, branded PDF financial statements or export raw transaction history as CSV for spreadsheets."
   },
   {
     q: "How do I delete my account and data?",

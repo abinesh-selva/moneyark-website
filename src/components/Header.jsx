@@ -14,6 +14,7 @@ const Header = ({ scrolled }) => {
         <nav className="hidden md:flex items-center gap-8">
           <Link to="/" className={`${isActive('/') ? 'text-primary-container' : 'text-on-primary/60'} font-bold transition-all duration-200 hover:text-primary-container`}>Home</Link>
           <Link to="/pricing" className={`${isActive('/pricing') ? 'text-primary-container' : 'text-on-primary/60 hover:text-primary-container'} transition-colors duration-300`}>Free</Link>
+          <Link to="/faq" className={`${isActive('/faq') ? 'text-primary-container' : 'text-on-primary/60 hover:text-primary-container'} transition-colors duration-300`}>FAQ</Link>
           <Link to="/privacy" className={`${isActive('/privacy') ? 'text-primary-container' : 'text-on-primary/60 hover:text-primary-container'} transition-colors duration-300`}>Privacy</Link>
           <Link to="/terms" className={`${isActive('/terms') ? 'text-primary-container' : 'text-on-primary/60 hover:text-primary-container'} transition-colors duration-300`}>Terms</Link>
         </nav>

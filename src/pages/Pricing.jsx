@@ -86,11 +86,11 @@ const Pricing = () => {
                     <div className="space-y-10">
                         <div className="flex justify-between items-start">
                             <h3 className="font-headline font-bold text-3xl text-white">Universal Tier</h3>
-                            <span className="text-[10px] font-mono font-bold tracking-[0.2em] text-primary-container bg-primary-container/10 px-2 py-1 rounded">V2024.1</span>
+                            <span className="text-[10px] font-mono font-bold tracking-[0.2em] text-primary-container bg-primary-container/10 px-2 py-1 rounded">v1.0.1</span>
                         </div>
                         <div className="flex items-baseline gap-1">
                             <span className="text-7xl font-headline font-black text-white">$0</span>
-                            <span className="text-xs text-primary-container font-bold tracking-tight uppercase">/ Right Now</span>
+                            <span className="text-xs text-primary-container font-bold tracking-tight uppercase">/ Forever Free</span>
                         </div>
                         <p className="text-lg text-on-surface-variant leading-relaxed">
                             Full access to every feature at no cost. Download, track, and analyse your finances without spending a rupee.
@@ -98,14 +98,14 @@ const Pricing = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <motion.ul variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="space-y-5">
                                 {[
-                                    'Personal Finance AI',
-                                    'Voice Expense Tracking',
-                                    'SMS Auto-Scan',
-                                    'Receipt Scanner',
+                                    'Google Gemini AI Coach',
+                                    'Voice Expense Logging',
+                                    'Bank SMS Auto-Scan',
+                                    'Receipt Scanner (OCR)',
+                                    'PDF Bank Statement Import',
                                     'Smart Budget Planner',
-                                    'Real-time Sync',
-                                    'Recurring Transactions',
-                                    'Calendar View'
+                                    'Savings Goals Tracker',
+                                    'Bill & Subscription Reminders'
                                 ].map((feature, i) => (
                                     <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-sm text-on-primary font-medium group-hover:text-primary-container transition-colors">
                                         <span className="material-symbols-outlined text-lg text-primary-container">check_circle</span>
@@ -115,13 +115,14 @@ const Pricing = () => {
                             </motion.ul>
                             <motion.ul variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="space-y-5">
                                 {[
-                                    'Unlimited Budgets & Accounts',
+                                    'Family & Shared Finances',
+                                    'Interactive Calendar View',
+                                    'Multi-Account (Cash/Bank/Savings/Credit)',
                                     'Reports & Analytics Charts',
                                     '15 Currencies Supported',
-                                    'Smart Transaction Filters',
                                     'Biometric App Lock',
-                                    'Offline-First Storage',
-                                    'CSV Export'
+                                    'Offline SQLite + Cloud Sync',
+                                    'PDF Financial Reports & CSV Export'
                                 ].map((feature, i) => (
                                     <motion.li key={i} variants={fadeIn} className="flex items-center gap-3 text-sm text-on-primary font-medium group-hover:text-primary-container transition-colors">
                                         <span className="material-symbols-outlined text-lg text-primary-container">check_circle</span>

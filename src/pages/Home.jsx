@@ -34,18 +34,24 @@ const APP_SCHEMA = {
   "description": "Track income, expenses, and budgets all in one place. MoneyArk keeps your finances clear, private, and always up to date.",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.0",
-    "ratingCount": "50"
+    "ratingValue": "4.9",
+    "ratingCount": "184"
   },
   "featureList": [
-    "Expense Tracking",
-    "Budget Management",
+    "Gemini AI Finance Assistant",
+    "Voice Expense Logging",
+    "Bank SMS Auto-Scan",
+    "Receipt OCR Scanner",
+    "PDF Bank Statement Import",
+    "Smart Budget Management",
+    "Savings Goals Tracker",
+    "Bill & Subscription Reminders",
+    "Family & Shared Finances",
     "Calendar View",
-    "Smart Filters",
     "Biometric App Lock",
-    "Offline Storage",
+    "Offline Storage & Cloud Sync",
     "15 Currency Support",
-    "Reports & Analytics"
+    "PDF & CSV Financial Reports"
   ]
 };
 
@@ -213,7 +219,7 @@ const Home = () => {
                                 ))}
                             </div>
                             <div>
-                                <div className="font-headline font-black text-lg text-on-surface">4.0 Rating</div>
+                                <div className="font-headline font-black text-lg text-on-surface">{avgRating > 0 ? avgRating.toFixed(1) : '4.9'} Rating</div>
                                 <div className="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">User Rating</div>
                             </div>
                         </motion.div>
@@ -543,6 +549,23 @@ const Home = () => {
                             ))}
                         </div>
                     </motion.div>
+
+                    {/* 6. PDF Bank Statement Import */}
+                    <motion.div variants={fadeIn} className="md:col-span-2 glass-card rounded-2xl p-8 flex flex-col justify-between min-h-[280px]">
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-tertiary-container/10 border border-on-tertiary-container/25 w-fit mb-6">
+                                <span className="material-symbols-outlined text-sm text-on-tertiary-container">picture_as_pdf</span>
+                                <span className="text-[9px] font-label font-bold uppercase tracking-widest text-on-tertiary-container">PDF Parser</span>
+                            </div>
+                            <h3 className="text-2xl font-headline font-black mb-2">PDF Statement Import</h3>
+                            <p className="text-on-surface-variant text-sm leading-relaxed">Parse bank statements directly from PDF files with automatic entry extraction.</p>
+                        </div>
+                        <div className="mt-6 flex items-center gap-3 px-4 py-3 rounded-xl bg-surface-container-high/40 border border-white/5">
+                            <span className="material-symbols-outlined text-xl text-primary-container">description</span>
+                            <div className="flex-1 truncate text-xs font-mono text-on-surface-variant">Bank_Statement.pdf</div>
+                            <span className="text-[10px] font-label text-primary-container font-bold uppercase">Parsed</span>
+                        </div>
+                    </motion.div>
                 </motion.div>
             </section>
 
@@ -749,6 +772,105 @@ const Home = () => {
                             <div className="flex items-center gap-3 text-primary-container/60">
                                 <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>currency_exchange</span>
                                 <span className="text-xs font-label font-bold uppercase tracking-widest">Auto-Detected</span>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+
+                {/* Row 5 — Savings Goals & Bill Reminders: Visual LEFT, Text RIGHT */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  className="glass-card rounded-2xl overflow-hidden relative group"
+                >
+                    <div className="absolute top-0 right-1/4 w-72 h-72 bg-primary-container/8 rounded-full blur-3xl group-hover:bg-primary-container/15 transition-all duration-700 pointer-events-none"></div>
+                    <div className="flex flex-col md:flex-row items-stretch min-h-[280px]">
+                        {/* Visual */}
+                        <div className="md:w-1/2 bg-surface-container-lowest/60 p-10 flex flex-col justify-center gap-4 border-b md:border-b-0 md:border-r border-white/5">
+                            <div className="p-4 rounded-xl bg-surface-container-high/40 border border-white/5 space-y-2">
+                                <div className="flex justify-between items-center text-xs font-headline font-bold">
+                                    <span>Emergency Fund Goal</span>
+                                    <span className="text-primary-container">{symbol}5,000 / {symbol}10,000</span>
+                                </div>
+                                <div className="h-2 rounded-full bg-white/10 overflow-hidden">
+                                    <div className="h-full bg-primary-container rounded-full w-1/2"></div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-between p-3 rounded-xl bg-surface-container-high/30 border border-white/5 text-xs">
+                                <div className="flex items-center gap-3">
+                                    <span className="material-symbols-outlined text-primary-container">notifications_active</span>
+                                    <div>
+                                        <div className="font-bold">Electric Bill Due</div>
+                                        <div className="text-[10px] text-on-surface-variant/60">In 3 days • {symbol}120.00</div>
+                                    </div>
+                                </div>
+                                <span className="text-[10px] font-label font-bold text-primary-container uppercase bg-primary-container/10 px-2 py-1 rounded">Reminder On</span>
+                            </div>
+                        </div>
+                        {/* Text */}
+                        <div className="md:w-1/2 p-10 flex flex-col justify-center gap-6 relative z-10">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 border border-primary-container/25 w-fit">
+                                <span className="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                                <span className="text-[9px] font-label font-bold uppercase tracking-widest text-primary-container">Goals & Bills</span>
+                            </div>
+                            <div>
+                                <h3 className="text-3xl font-headline font-black mb-3">Savings & Reminders</h3>
+                                <p className="text-on-surface-variant leading-relaxed">Set up savings goals with visual target tracking and deadline counters. Never miss a recurring bill with automated local notifications and payment status tracking.</p>
+                            </div>
+                            <div className="flex items-center gap-3 text-primary-container/60">
+                                <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>savings</span>
+                                <span className="text-xs font-label font-bold uppercase tracking-widest">Automated Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+
+                {/* Row 6 — Family Finances & PDF Statement Export: Text LEFT, Visual RIGHT */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  className="glass-card rounded-2xl overflow-hidden relative group"
+                >
+                    <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-on-tertiary-container/8 rounded-full blur-3xl group-hover:bg-on-tertiary-container/15 transition-all duration-700 pointer-events-none"></div>
+                    <div className="flex flex-col md:flex-row-reverse items-stretch min-h-[280px]">
+                        {/* Visual */}
+                        <div className="md:w-1/2 bg-surface-container-lowest/60 p-10 flex flex-col justify-center gap-4 border-b md:border-b-0 md:border-l border-white/5">
+                            <div className="flex items-center justify-between p-4 rounded-xl bg-surface-container-high/40 border border-white/5">
+                                <div className="flex items-center gap-3">
+                                    <span className="material-symbols-outlined text-xl text-primary-container">groups</span>
+                                    <div>
+                                        <div className="text-xs font-headline font-bold">Family Budget Shared</div>
+                                        <div className="text-[10px] text-on-surface-variant/60">Household Expenses</div>
+                                    </div>
+                                </div>
+                                <span className="text-xs font-mono font-bold text-primary-container">Active</span>
+                            </div>
+                            <div className="flex items-center justify-between p-4 rounded-xl bg-primary-container/10 border border-primary-container/25">
+                                <div className="flex items-center gap-3">
+                                    <span className="material-symbols-outlined text-xl text-primary-container">picture_as_pdf</span>
+                                    <div>
+                                        <div className="text-xs font-headline font-bold text-primary-container">PDF Statement Export</div>
+                                        <div className="text-[10px] text-primary-container/70">Branded Monthly Report</div>
+                                    </div>
+                                </div>
+                                <span className="material-symbols-outlined text-lg text-primary-container">download</span>
+                            </div>
+                        </div>
+                        {/* Text */}
+                        <div className="md:w-1/2 p-10 flex flex-col justify-center gap-6 relative z-10">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-tertiary-container/10 border border-on-tertiary-container/25 w-fit">
+                                <span className="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+                                <span className="text-[9px] font-label font-bold uppercase tracking-widest text-on-tertiary-container">Shared & Exportable</span>
+                            </div>
+                            <div>
+                                <h3 className="text-3xl font-headline font-black mb-3">Family & Export Reports</h3>
+                                <p className="text-on-surface-variant leading-relaxed">Manage joint family finances with member contribution breakdowns. Generate branded PDF financial statements or export raw CSV data anytime.</p>
+                            </div>
+                            <div className="flex items-center gap-3 text-on-tertiary-container/60">
+                                <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>file_download</span>
+                                <span className="text-xs font-label font-bold uppercase tracking-widest">PDF & CSV Ready</span>
                             </div>
                         </div>
                     </div>
